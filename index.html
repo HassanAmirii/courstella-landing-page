@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="icon" type="image/svg+xml" href="/asset/icons/subtract-square-duotone (1).svg" />
+    <title>Courstella – Prepare Smarter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --primary: #2a2f7a;
+        --light: #f5f7fb;
+        --card: #eef1f9;
+        --light-text: #4b5563;
+      }
+
+      .fade-in {
+        animation: fadeIn 1s ease-in-out forwards;
+        opacity: 0;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      details summary {
+        cursor: pointer;
+        list-style: none;
+      }
+
+      details[open] summary::after {
+        content: "▲";
+        float: right;
+      }
+
+      summary::after {
+        content: "▼";
+        float: right;
+      }
+    </style>
+  </head>
+  <body class="bg-[var(--light)] text-gray-800 font-sans">
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 px-4 bg-[var(--primary)] text-white fade-in">
+      <h1 class="text-5xl font-bold mb-4">Welcome to Courstella</h1>
+      <p class="text-xl max-w-2xl mx-auto mb-8 text-[var(--light-text)] text-white/90">
+        The easiest way to prepare for departmental exams in universities. Sorted by department, level, and topic.
+      </p>
+      <a href="#signup" class="bg-white text-[var(--primary)] px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Join the Waitlist</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 px-6 fade-in">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-12">Why Students Love Courstella</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+          <div class="bg-[var(--card)] p-6 rounded-xl shadow">
+            <h3 class="text-xl font-bold mb-2">By Department</h3>
+            <p>Get access to practice questions unique to your field.</p>
+          </div>
+          <div class="bg-[var(--card)] p-6 rounded-xl shadow">
+            <h3 class="text-xl font-bold mb-2">By Level</h3>
+            <p>All levels supported — from 100 to 400 and beyond.</p>
+          </div>
+          <div class="bg-[var(--card)] p-6 rounded-xl shadow">
+            <h3 class="text-xl font-bold mb-2">By Topic</h3>
+            <p>Drill down on individual topics with focused questions.</p>
+          </div>
+          <div class="bg-[var(--card)] p-6 rounded-xl shadow">
+            <h3 class="text-xl font-bold mb-2">Smart Tracking</h3>
+            <p>Track what you've studied and where you’re strongest.</p>
+          </div>
+          <div class="bg-[var(--card)] p-6 rounded-xl shadow">
+            <h3 class="text-xl font-bold mb-2">Instant Feedback</h3>
+            <p>Know what's right or wrong immediately after answering.</p>
+          </div>
+          <div class="bg-[var(--card)] p-6 rounded-xl shadow">
+            <h3 class="text-xl font-bold mb-2">Offline Friendly</h3>
+            <p>Low-data mode for students with limited internet access.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white px-6 fade-in">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <details class="bg-[var(--card)] p-4 rounded-lg">
+            <summary class="font-medium">What is Courstella?</summary>
+            <p class="mt-2 text-sm text-gray-600">Courstella is a smart quiz app tailored to Nigerian university students — organized by faculty, department, level, and topic.</p>
+          </details>
+          <details class="bg-[var(--card)] p-4 rounded-lg">
+            <summary class="font-medium">Is Courstella free to use?</summary>
+            <p class="mt-2 text-sm text-gray-600">Yes. The MVP will launch free for early users. Paid plans may come later with advanced features.</p>
+          </details>
+          <details class="bg-[var(--card)] p-4 rounded-lg">
+            <summary class="font-medium">Can I use it without internet?</summary>
+            <p class="mt-2 text-sm text-gray-600">We're working on offline support. For now, an internet connection is needed to access quiz data.</p>
+          </details>
+          <details class="bg-[var(--card)] p-4 rounded-lg">
+            <summary class="font-medium">Will it include past questions?</summary>
+            <p class="mt-2 text-sm text-gray-600">Yes, we’re aggregating departmental past questions to help you study with real material.</p>
+          </details>
+          <details class="bg-[var(--card)] p-4 rounded-lg">
+            <summary class="font-medium">How do I contribute or collaborate?</summary>
+            <p class="mt-2 text-sm text-gray-600">Join the waitlist and reach out via email. We're looking for contributors, testers, and partners.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+<!-- Signup Section -->
+<section id="signup" class="py-20 px-6 bg-[var(--light)] fade-in">
+  <div class="max-w-md mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Be the First to Try Courstella</h2>
+    <p class="mb-6 text-[var(--light-text)]">Drop your email and message to get early access or contact us directly.</p>
+    <form action="https://formspree.io/f/xeokeawz" method="POST" class="flex flex-col gap-4 text-left bg-white p-6 rounded-xl shadow">
+      <label class="text-sm font-medium">
+        Your email:
+        <input type="email" name="email" required
+          class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]" />
+      </label>
+      <label class="text-sm font-medium">
+        Your message:
+        <textarea name="message" rows="4"
+          class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+        ></textarea>
+      </label>
+      <button type="submit"
+        class="bg-[var(--primary)] text-white px-6 py-3 rounded-lg hover:bg-indigo-800 transition w-full text-center">
+        Send
+      </button>
+    </form>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-sm py-8 text-gray-500 fade-in">
+      &copy; 2025 Courstella. Built with love in Nigeria.❤️
+    </footer>
+  </body>
+</html>
